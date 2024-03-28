@@ -28,7 +28,30 @@
   list-style: none;
 }
 .emoji-sizing {
-  height: 50px;
+  height: 90px;
   margin: 30px;
   cursor: pointer;
+}
+.sub-container-2 {
+  padding: 100px;
+  border-radius: 10px;
+  width: 40%;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 80%;
+}
+.style-para {
+  color: #1e293b;
+  font-family: Roboto;
+  font-weight: 600;
 }

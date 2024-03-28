@@ -22,22 +22,26 @@ class Feedback extends Component {
             </h1>
             <ul className="list-style">
               {emojis.map(eachitem => (
-                <li key={eachitem.id}>
+                <li key={eachitem.id} className="list-item">
                   <img
                     src={eachitem.imageUrl}
                     alt={eachitem.name}
                     className="emoji-sizing"
                     onClick={this.sendFeedback}
                   />
+                  <p className="style-para">{eachitem.name}</p>
                 </li>
               ))}
             </ul>
           </div>
         )}
         {isTrue && (
-          <div className="sub-container">
+          <div className="sub-container-2">
             <h1 className="main-heading">Thank You</h1>
             <img src={loveEmojiUrl} alt="love emoji" className="emoji-sizing" />
+            <p className="style-para">
+              we will use your feedback to improve our system
+            </p>
           </div>
         )}
       </div>
